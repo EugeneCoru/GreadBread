@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="scss/style.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>BreadStore</title>
+  </head>
+  <body>
+    <!--==========HEADER========-->
+    <header class="header center" id="header">
+
+      <nav class="nav cont" >
+        <!---logo-->
+        <a href="#" class="nav_logo">GrandBread</a>
+        <!---menu-->
+        <div class="nav_menu " id="nav-menu">
+          <ul class="nav_menu_list">
+            <li class="nav_menu_list_item">
+              <a href="#home" class="nav_menu_list_item_a">главная</a>
+            </li>
+            <li class="nav_menu_list_item">
+              <a href="#news" class="nav_menu_list_item_a">новинки</a>
+            </li>
+            <li class="nav_menu_list_item">
+              <a href="#history" class="nav_menu_list_item_a">история</a>
+            </li>
+            <li class="nav_menu_list_item">
+              <a href="#menu" class="nav_menu_list_item_a">меню</a>
+            </li>
+            
+              
+          
+            <li class="nav_menu_list_item">
+              <a href="#contacts" class="nav_menu_list_item_a">контакты</a>
+            </li>
+          </ul>
+
+
+          <!-- --close button--->
+          <div class="nav_menu_close_button" id="nav-close">
+            <img src="icon/icons8-удалить.svg" alt="image" class="nav_menu_close_button_img">
+          </div>
+          <img src="icon/хлеб2.png" alt="image" class="header_bread_1">
+          <img src="icon/хлеб.png" alt="image" class="header_bread_2">
+          
+          
+        </div>
+        <div class="nav_menu_toggle_botton" id="nav-toggle">
+          <img src="icon/icons8-меню.svg" alt="image" class="nav_menu_toggle_button">
+        </div>
+      </nav>
+    </header>
+
+    <!--==========MAIN========-->
+    <main class="main">
+      <!--==========HOME========-->
+      <section class="home center" id="home">
+        <img class="home_bg" src="img/bg.jpg" alt="table">
+        <div class="home_shadow"></div>
+        <div class="home_cont cont grid">
+          <!---Главный текст-->
+          <div class="home_cont_data">
+            <div>
+            <h1 class="home_cont_data_h1">Хлеб - это тоже искуство!</h1>
+            <p class="home_cont_data_p">Пекарня GreadBread изготавливает лучшие хлебобулочные изделия в Нижнем Новгороде <br> по версии местных бабушек</p>
+            <a class="home_cont_data_a" href="#menu">Заказать</a>
+          </div>
+            <img class="home_cont_data_img" src="img/надфон.png" alt="bread">
+          </div>
+          <div class="home_img">
+            <img class="home_img_" src="icon/булочка.png" alt="bread">
+          </div>
+
+          <!---локация и соц сети-->
+          <footer class="home_footer">
+            <div class="home_footer_location">
+              <span class="home_footer_location_span">г.Нижний Новгород</span>
+            </div>
+            <div class="home_footer_social">
+              <a  class="home_footer_social_a" href="#" target="_blank">
+                <img class="home_footer_social_a_img" src="icon/inst.svg">
+              </a>
+              <a  class="home_footer_social_a" href="#" target="_blank">
+                <img class="home_footer_social_a_img" src="icon/vk.png">
+              </a>
+              <a  class="home_footer_social_a" href="#" target="_blank">
+                <img class="home_footer_social_a_img" src="icon/tg.svg">
+              </a>
+            </div>
+
+
+          </footer>
+
+
+        </div>
+      </section>
+      <!--==========HISTORY========-->
+      <section class="news center cont" id="news">
+        <h2 class="news_h2">Новинки</h2>
+        <div class="news_cont cont grid">
+          <div class="news_content grid">
+            <article class="news_card">
+              <div class="news_card_data">
+                <h2 class="news_card_data_h2">Макаруны</h2>
+                <p class="news_card_data_p">Знаменитое французское кондитерское изделие из яичных белков, сахара и молотого миндаля</p>
+              </div>
+
+              <img class="news_card_img" src="img/макаруны роз.png" alt="bread">
+            </article>
+            <article class="news_card">
+              <div class="news_card_data">
+                <h2 class="news_card_data_h2">Тирамису</h2>
+                <p class="news_card_data_p">Дессерт родом из Италии не оставит вас без внимания</p>
+              </div>
+
+              <img class="news_card_img" src="img/Тирамису.png" alt="bread">
+            </article>
+            <article class="news_card">
+              <div class="news_card_data">
+                <h2 class="news_card_data_h2">Пончики</h2>
+                <p class="news_card_data_p">Их любят взрослые и дети, а еще американские полицейские</p>
+              </div>
+
+              <img class="news_card_img" src="img/пончики.png" alt="bread">
+            </article>
+          </div>
+        <div class="news_cont_button">
+          <a class="news_cont_button_a" href="#menu">Больше</a>
+        </div>
+        </div>
+
+      </section>
+
+
+      <!--==========HISTORY========-->
+      <section class="history center cont" id="history">
+        <!---<h2 class="history_h2">История хлеба</h2>---->
+        <div class="history_cont cont grid">
+          
+                <div class="history_cont_data">
+                  <div>
+                  <h2 class="history_cont_data_h2">История хлеба</h2>
+                  <p class="history_cont_datat_p">Хлеб — один из старейших приготавливаемых продуктов, появившийся ещё в неолите. Первый хлеб представлял собой подобие запечённой кашицы, приготовленной из крупы и воды, а также мог стать результатом случайного приготовления или намеренных экспериментов с водой и мукой.</p>
+                  
+                  <a class="history_cont_button" href="https://www.darnitsa.ru/blog/istoriya/vsemirnaya-istoriya-khleba/" target="_blank">Узнать</a>
+                </div>
+                  <img class="history_cont_img" src="img/история.jpg" alt="image">
+                </div>
+                
+                
+        </div>
+
+        <img class="history_img" src="icon/хлеб.png" alt="image">
+      </section>
+
+      <!--==========HISTORY========-->
+      <section class="menu center cont" id="menu">
+              <h2 class="menu_h2">Выбирай!</h2>
+              <div class="menu_cont cont grid">
+                <article class="menu_card">
+                  <img class="menu_card_img" src="img/bread2.jpg" alt="image">
+                  <div class="menu_card_data">
+                    <h2 class="menu_card_data_title">Императорский</h2>
+                    <span class="menu_card_data_subtitle">хлеб</span>
+                    
+                  </div>
+                  <div class="menu_card_button">
+                    <h3 class="menu_card_data_price">50 руб.</h3>
+                    <img class="menu_card_button_i" src="icon/plus.png" alt="plus">
+                  </div>
+                </article>
+
+                <article class="menu_card">
+                  <img class="menu_card_img" src="img/bread3.jpg" alt="image">
+                  <div class="menu_card_data">
+                    <h2 class="menu_card_data_title">Пролетариат</h2>
+                    <span class="menu_card_data_subtitle">хлеб</span>
+                    
+                  </div>
+                  <div class="menu_card_button">
+                    <h3 class="menu_card_data_price">70 руб.</h3>
+                    <img class="menu_card_button_i" src="icon/plus.png" alt="plus">
+                  </div>
+                </article>
+
+                <article class="menu_card">
+                  <img class="menu_card_img" src="img/bread4.jpg" alt="image">
+                  <div class="menu_card_data">
+                    <h2 class="menu_card_data_title">С семечками</h2>
+                    <span class="menu_card_data_subtitle">хлеб</span>
+                    
+                  </div>
+                  <div class="menu_card_button">
+                    <h3 class="menu_card_data_price">45 руб.</h3>
+                    <img class="menu_card_button_i" src="icon/plus.png" alt="plus">
+                  </div>
+                </article>
+
+                <article class="menu_card">
+                  <img class="menu_card_img" src="img/bread5.jpg" alt="image">
+                  <div class="menu_card_data">
+                    <h2 class="menu_card_data_title">Белый</h2>
+                    <span class="menu_card_data_subtitle">хлеб</span>
+                    
+                  </div>
+                  <div class="menu_card_button">
+                    <h3 class="menu_card_data_price">50 руб.</h3>
+                    <img class="menu_card_button_i" src="icon/plus.png" alt="plus">
+                  </div>
+                </article>
+
+                <article class="menu_card">
+                  <img class="menu_card_img" src="img/bread6.jpg" alt="image">
+                  <div class="menu_card_data">
+                    <h2 class="menu_card_data_title">Батон</h2>
+                    <span class="menu_card_data_subtitle">хлеб</span>
+                    
+                  </div>
+                  <div class="menu_card_button">
+                    <h3 class="menu_card_data_price">40 руб.</h3>
+                    <img class="menu_card_button_i" src="icon/plus.png" alt="plus">
+                  </div>
+                </article>
+
+                <article class="menu_card">
+                  <img class="menu_card_img" src="img/bread7.jpg" alt="image">
+                  <div class="menu_card_data">
+                    <h2 class="menu_card_data_title">Злаковый</h2>
+                    <span class="menu_card_data_subtitle">хлеб</span>
+                    
+                  </div>
+                  <div class="menu_card_button">
+                    <h3 class="menu_card_data_price">65 руб.</h3>
+                    <img class="menu_card_button_i" src="icon/plus.png" alt="plus">
+                  </div>
+                </article>
+
+                <article class="menu_card">
+                  <img class="menu_card_img" src="img/bread8.jpg" alt="image">
+                  <div class="menu_card_data">
+                    <h2 class="menu_card_data_title">Без дрожжей</h2>
+                    <span class="menu_card_data_subtitle">хлеб</span>
+                    
+                  </div>
+                  <div class="menu_card_button">
+                    <h3 class="menu_card_data_price">45 руб.</h3>
+                    <img class="menu_card_button_i" src="icon/plus.png" alt="plus">
+                  </div>
+                </article>
+
+                <article class="menu_card">
+                  <img class="menu_card_img" src="img/bread9.jpg" alt="image">
+                  <div class="menu_card_data">
+                    <h2 class="menu_card_data_title">Бородинский</h2>
+                    <span class="menu_card_data_subtitle">хлеб</span>
+                    
+                  </div>
+                  <div class="menu_card_button">
+                    <h3 class="menu_card_data_price">45 руб.</h3>
+                    <img class="menu_card_button_i" src="icon/plus.png" alt="plus">
+                  </div>
+                </article>
+
+                <article class="menu_card">
+                  <img class="menu_card_img" src="img/bread10.jpg" alt="image">
+                  <div class="menu_card_data">
+                    <h2 class="menu_card_data_title">Пушка</h2>
+                    <span class="menu_card_data_subtitle">хлеб</span>
+                    
+                  </div>
+                  <div class="menu_card_button">
+                    <h3 class="menu_card_data_price">69 руб.</h3>
+                    <img class="menu_card_button_i" src="icon/plus.png" alt="plus">
+                  </div>
+                </article>
+
+                <article class="menu_card">
+                  <img class="menu_card_img" src="img/des1.jpg" alt="image">
+                  <div class="menu_card_data">
+                    <h2 class="menu_card_data_title">Нежность</h2>
+                    <span class="menu_card_data_subtitle">дессерт</span>
+                    
+                  </div>
+                  <div class="menu_card_button">
+                    <h3 class="menu_card_data_price">105 руб.</h3>
+                    <img class="menu_card_button_i" src="icon/plus.png" alt="plus">
+                  </div>
+                </article>
+
+                <article class="menu_card">
+                  <img class="menu_card_img" src="img/des2.jpg" alt="image">
+                  <div class="menu_card_data">
+                    <h2 class="menu_card_data_title">Помадка</h2>
+                    <span class="menu_card_data_subtitle">дессерт</span>
+                    
+                  </div>
+                  <div class="menu_card_button">
+                    <h3 class="menu_card_data_price">85 руб.</h3>
+                    <img class="menu_card_button_i" src="icon/plus.png" alt="plus">
+                  </div>
+                </article>
+
+                <article class="menu_card">
+                  <img class="menu_card_img" src="img/des3.jpg" alt="image">
+                  <div class="menu_card_data">
+                    <h2 class="menu_card_data_title">Милфей</h2>
+                    <span class="menu_card_data_subtitle">дессерт</span>
+                    
+                  </div>
+                  <div class="menu_card_button">
+                    <h3 class="menu_card_data_price">120 руб.</h3>
+                    <img class="menu_card_button_i" src="icon/plus.png" alt="plus">
+                  </div>
+                </article>
+
+              </div>
+      </section>
+
+      <!--==========HISTORY========-->
+      <section class="visit center cont">
+        <div class="visit_cont center cont">
+          <img class="visit_cont_bg" src="img/фонфутер.webp" alt="image">
+          <div class="visit_cont_shadow"></div>
+
+          <div class="visit_content">
+            <div class="visit_content_data">
+              <h2 class="visit_content_data_h2">Приходите к нам</h2>
+              <p class="visit_content_data_p">Сеть пекарнь с изысканным хлебом по всему Нижнему Новгороду</p>
+              <a class="visit_content_data_button" href="https://yandex.ru/maps/47/nizhny-novgorod/?ll=44.006520%2C56.326799&z=11" target="_blank">На карте</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+    </main>
+
+    <!--==========FOOTER========-->
+    <footer class="footer center cont" id="contacts">
+      <div class="footer_cont cont grid">
+        <div>
+        <a class="footer_logo" href="#">GrandBread</a>
+        <p class="footer_desc">Художники в мире хлеба</p>
+      </div>
+      <div class="footer_content ">
+        <!---1-->
+        <div class="footer_content_data grid">
+          <h3 class="footer_content_data_title">Адреса</h3>
+          <ul class="footer_content_data_list">
+            <li class="footer_content_data_list_item">
+              <address class="footer_content_data_list_item_info"><a href="https://yandex.ru/maps/47/nizhny-novgorod/?ll=44.006520%2C56.326799&z=11" target="_blank">Карта</a></address>
+            </li>
+
+            <li class="footer_content_data_list_item">
+              <address class="footer_content_data_list_item_info">7:00 - 20:00</address>
+            </li>
+          </ul>
+        </div>
+        <!---2--->
+        <div class="footer_content_data grid">
+          <h3 class="footer_content_data_title">Контакты</h3>
+          <ul class="footer_content_data_list">
+            <li class="footer_content_data_list_item">
+              <address class="footer_content_data_list_item_info"><a href="#">+7(123)123-23-45</a></address>
+            </li>
+
+            <li class="footer_content_data_list_item">
+              <address class="footer_content_data_list_item_info"><a href="#">greadbreadnn@gmail.com</a></address>
+            </li>
+          </ul>
+        </div>
+          <!---3--->
+        <div class="footer_content_data grid">
+          <h3 class="footer_content_data_title">Cоциальные сети</h3>
+          <ul class="footer_content_data_list">
+            <li class="footer_content_data_list_item">
+              <address class="footer_content_data_list_item_info"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwj7nq6ahtSEAxVkKRAIHUfKCSUQFnoECAgQAQ&url=https%3A%2F%2Fwww.instagram.com%2F&usg=AOvVaw1cBeRoOpMhZ3-x5M1sA3Fm&opi=89978449" target="_blank">Инстаграм</a></address>
+            </li>
+
+            <li class="footer_content_data_list_item">
+              <address class="footer_content_data_list_item_info"><a href="https://vk.com/yourgii" target="_blank">Вконтакте</a></address>
+            </li>
+
+            <li class="footer_content_data_list_item">
+              <address class="footer_content_data_list_item_info"><a href="https://web.telegram.org/k/" target="_blank">Телеграмм</a></address>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <img  class="footer_cont_img1" src="icon/пончик.png" alt="image">
+      <img class="footer_cont_img2" src="icon/хлеб2.png" alt="image">
+      <span class="footer_cont_copy center">&#169; All Rights Reserved By <a href="#">EugeneCoru</a></span>
+
+    </div>
+    
+
+    </footer>
+
+    <div class="sale">
+      <div class="sale_bg"></div>
+      <div class="sale_cont">
+        <img class="sale_cont_img" src="img/пекарь.jpg" alt="image">
+        <div class="sale_cont_data">
+          <div>
+          <h2 class="sale_cont_data_title">Забирай пока горячо!</h2>
+          <p class="sale_cont_data_subtitle">Скидка на продукцию сети GreadBread <br>во всех пекарнях по городу с 19:00 по 20:00</p>
+        </div>
+          <div>
+            <p class="sale_cont_data_p">20%</p>
+          </div>
+        </div>
+        <img  class="sale_cont_close" src="icon/close.svg" alt="close">
+        
+      </div>
+    </div>
+
+    <div class="call">
+      <img  class="call_icon" src="icon/call.png" alt="">
+    </div>
+
+    <div class="basket">
+      <div class="basket_icon">
+      <img class="basket_icon_i" src="icon/корзина.png" alt="icon">
+      <p class="basket_icon_count">8</p>
+
+    </div>
+    </div>
+    
+
+    <script src="/js/scrollreveal.min.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
