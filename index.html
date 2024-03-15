@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/public/img/bread1.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.scss">
+    <link rel="stylesheet" href="/scss/style.scss">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
@@ -48,15 +48,15 @@
 
           <!-- --close button--->
           <div class="nav_menu_close_button" id="nav-close">
-            <img src="icon/icons8-удалить.svg" alt="image" class="nav_menu_close_button_img">
+            <img src="/public/icon/close.svg" alt="image" class="nav_menu_close_button_img">
           </div>
-          <img src="icon/хлеб2.png" alt="image" class="header_bread_1">
-          <img src="icon/хлеб.png" alt="image" class="header_bread_2">
+          <img src="/public/icon/булочка.png" alt="image" class="header_bread_1">
+          <img src="/public/icon/хлеб.png" alt="image" class="header_bread_2">
           
           
         </div>
         <div class="nav_menu_toggle_botton" id="nav-toggle">
-          <img src="icon/icons8-меню.svg" alt="image" class="nav_menu_toggle_button">
+          <img src="/public/icon/menu.svg" alt="image" class="nav_menu_toggle_button">
         </div>
       </nav>
     </header>
@@ -65,7 +65,7 @@
     <main class="main">
       <!--==========HOME========-->
       <section class="home center" id="home">
-        <img class="home_bg" src="img/bg.jpg" alt="table">
+        <img class="home_bg" src="/public/img/bg.jpg" alt="table">
         <div class="home_shadow"></div>
         <div class="home_cont cont grid">
           <!---Главный текст-->
@@ -75,10 +75,10 @@
             <p class="home_cont_data_p">Пекарня GreadBread изготавливает лучшие хлебобулочные изделия в Нижнем Новгороде <br> по версии местных бабушек</p>
             <a class="home_cont_data_a" href="#menu">Заказать</a>
           </div>
-            <img class="home_cont_data_img" src="img/надфон.png" alt="bread">
+            <img class="home_cont_data_img" src="/public/img/надфон.png" alt="bread">
           </div>
           <div class="home_img">
-            <img class="home_img_" src="icon/булочка.png" alt="bread">
+            <img class="home_img_" src="/public/icon/булочка.png" alt="bread">
           </div>
 
           <!---локация и соц сети-->
@@ -88,13 +88,13 @@
             </div>
             <div class="home_footer_social">
               <a  class="home_footer_social_a" href="#" target="_blank">
-                <img class="home_footer_social_a_img" src="icon/inst.svg">
+                <img class="home_footer_social_a_img" src="/public/icon/inst.svg">
               </a>
               <a  class="home_footer_social_a" href="#" target="_blank">
-                <img class="home_footer_social_a_img" src="icon/vk.png">
+                <img class="home_footer_social_a_img" src="/public/icon/vk.png">
               </a>
               <a  class="home_footer_social_a" href="#" target="_blank">
-                <img class="home_footer_social_a_img" src="icon/tg.svg">
+                <img class="home_footer_social_a_img" src="/public/icon/tg.svg">
               </a>
             </div>
 
@@ -115,7 +115,7 @@
                 <p class="news_card_data_p">Знаменитое французское кондитерское изделие из яичных белков, сахара и молотого миндаля</p>
               </div>
 
-              <img class="news_card_img" src="img/макаруны роз.png" alt="bread">
+              <img class="news_card_img" src="/public/img/макаруны роз.png" alt="bread">
             </article>
             <article class="news_card">
               <div class="news_card_data">
@@ -123,7 +123,7 @@
                 <p class="news_card_data_p">Дессерт родом из Италии не оставит вас без внимания</p>
               </div>
 
-              <img class="news_card_img" src="img/Тирамису.png" alt="bread">
+              <img class="news_card_img" src="/public/img/Тирамису.png" alt="bread">
             </article>
             <article class="news_card">
               <div class="news_card_data">
@@ -131,7 +131,7 @@
                 <p class="news_card_data_p">Их любят взрослые и дети, а еще американские полицейские</p>
               </div>
 
-              <img class="news_card_img" src="img/пончики.png" alt="bread">
+              <img class="news_card_img" src="/public/img/пончики.png" alt="bread">
             </article>
           </div>
         <div class="news_cont_button">
@@ -151,16 +151,18 @@
                   <div>
                   <h2 class="history_cont_data_h2">История хлеба</h2>
                   <p class="history_cont_datat_p">Хлеб — один из старейших приготавливаемых продуктов, появившийся ещё в неолите. Первый хлеб представлял собой подобие запечённой кашицы, приготовленной из крупы и воды, а также мог стать результатом случайного приготовления или намеренных экспериментов с водой и мукой.</p>
-                  
+                  <div style="position: relative;">
+                  <img class="history_img" src="/public/icon/хлеб.png" alt="image">
                   <a class="history_cont_button" href="https://www.darnitsa.ru/blog/istoriya/vsemirnaya-istoriya-khleba/" target="_blank">Узнать</a>
+                   </div>
                 </div>
-                  <img class="history_cont_img" src="img/история.jpg" alt="image">
+                  <img class="history_cont_img" src="/public/img/история.jpg" alt="image">
                 </div>
                 
-                
+                       
         </div>
 
-        <img class="history_img" src="icon/хлеб.png" alt="image">
+        
       </section>
 
       <!--==========HISTORY========-->
@@ -168,7 +170,7 @@
               <h2 class="menu_h2">Выбирай!</h2>
               <div class="menu_cont cont grid">
                 <article class="menu_card">
-                  <img class="menu_card_img" src="img/bread2.jpg" alt="image">
+                  <img class="menu_card_img" src="/public/img/bread2.jpg" alt="image">
                   <div class="menu_card_data">
                     <h2 class="menu_card_data_title">Императорский</h2>
                     <span class="menu_card_data_subtitle">хлеб</span>
@@ -176,7 +178,7 @@
                   </div>
                   <div class="menu_card_button">
                     <h3 class="menu_card_data_price">50 руб.</h3>
-                    <img class="menu_card_button_i" src="icon/plus.png" alt="plus">
+                    <img class="menu_card_button_i" src="/public/icon/plus.png" alt="plus">
                   </div>
                 </article>
 
@@ -189,7 +191,7 @@
                   </div>
                   <div class="menu_card_button">
                     <h3 class="menu_card_data_price">70 руб.</h3>
-                    <img class="menu_card_button_i" src="icon/plus.png" alt="plus">
+                    <img class="menu_card_button_i" src="/public/icon/plus.png" alt="plus">
                   </div>
                 </article>
 
