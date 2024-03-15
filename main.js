@@ -1,4 +1,8 @@
+import './basket';
+
 //скрытие меню в адаптиве
+
+
 const navClose = document.querySelector('.nav_menu_close_button');
 const navMenu = document.querySelector('.nav_menu');
 const navTog = document.querySelector('.nav_menu_toggle_botton');
