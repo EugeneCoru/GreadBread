@@ -7,9 +7,7 @@ body{
     overflow-x: hidden;
     //position: relative;
 }
-.active{
-    display: flex;
-}
+
 .center{
     margin: 0 auto;
     
@@ -174,6 +172,7 @@ a,ul{
 }
 
 .basket{
+    display: none;
     .basket_icon{
         z-index: 101;
         position: fixed;
@@ -216,12 +215,14 @@ a,ul{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: black;
+    //background-color: black;
     display: none;
     align-items: center;
     justify-content: center;
     z-index: 100;
     font-family: $font-family;
+   
+    
     
     .basket_cont{
         width: 400px;
@@ -231,6 +232,38 @@ a,ul{
         flex-direction: column;
         align-items: center;
         background-color: $colorCard;
+        position: relative;
+        @media  screen and (max-width:400px) {
+             width: 300px;
+        }
+        .basket_cont_all_price{
+            width: 400px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: end;
+            gap: 1rem;
+            @media  screen and (max-width:400px) {
+                width: 300px;
+           }
+        }
+        .basket_cont_close{
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background-color: $colorOrange;
+            width: 15px;
+            padding: 5px;
+            cursor: pointer;
+            transition: .4s;
+            border: 0.5px solid $colorOrange;
+            &:hover{
+                background-color: $colorDark;
+                border: 0.5px solid $colorOrange;
+                border-color: $colorOrange;
+            }
+        }
+        
         
         
         .basket_cont_list{
@@ -238,6 +271,13 @@ a,ul{
             flex-direction: column;
             align-items: center;
             margin-top: 20px;
+            overflow-y: scroll;
+            max-width: 350px;
+            max-height: 350px;
+            @media  screen and (max-width:400px) {
+                max-width: 250px;
+           }
+            
             
             
             
@@ -248,7 +288,8 @@ a,ul{
                 flex-direction: row;
                 align-items: center;
                 width: 100%;
-                justify-content: space-around;
+                justify-content: space-between;
+                
                 .basket_cont_list_item_img{
                     width: 40px;
                     height: 40px;
@@ -256,7 +297,9 @@ a,ul{
                     object-position: center;
                 }
                 .basket_cont_list_item_delete{
-                    width: 20px;
+                    width: 15px;
+                    cursor: pointer;
+
                 }
                 .basket_cont_list_item_title{
                     font-size: 16px;
@@ -283,6 +326,9 @@ a,ul{
         }
     }
  }
+ .active{
+    display: flex;
+}
 
 
 
@@ -333,16 +379,29 @@ a,ul{
             flex-direction: row;
             font-family: $font-family;
             font-weight: $font2;
+            //z-index: 1000;
+            
             .header_bread_1{
                 display: none;
+                position: absolute;
+                top: 10rem;
+                right: 3rem;
+                max-width: 60px;
+                //height: 20px;
             }
             .header_bread_2{
-                display: none;
+                display: block;
+                position: absolute;
+                bottom: 5rem;
+                left:  11rem;
+                max-width: 40px;
+                
             }
             .nav_menu_list{
                 display: flex;
                 flex-direction: row;
                 align-items: center;
+                
                 li{
                     margin-left: 15px;
                     .nav_menu_list_item_a{
@@ -852,6 +911,7 @@ a,ul{
                     display: flex;
                     flex-direction: column;
                     row-gap: 2.5rem;
+                    font-size: 22px;
 
                     .nav_menu_list_item{
                         font-weight: $font2;

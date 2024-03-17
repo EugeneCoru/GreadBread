@@ -49,15 +49,15 @@
 
           <!-- --close button--->
           <div class="nav_menu_close_button" id="nav-close">
-            <img src="/public/icon/close.svg" alt="image" class="nav_menu_close_button_img">
+            <img src="./public/icon/close.svg" alt="image" class="nav_menu_close_button_img">
           </div>
-          <img src="/public/icon/булочка.png" alt="image" class="header_bread_1">
-          <img src="/public/icon/хлеб.png" alt="image" class="header_bread_2">
+          <img src="./public/icon/булочка.png" alt="image" class="header_bread_1">
+          <img src="./public/icon/хлеб.png" alt="image" class="header_bread_2">
           
           
         </div>
         <div class="nav_menu_toggle_botton" id="nav-toggle">
-          <img src="/public/icon/menu.svg" alt="image" class="nav_menu_toggle_button">
+          <img src="./public/icon/menu.svg" alt="image" class="nav_menu_toggle_button">
         </div>
       </nav>
     </header>
@@ -157,7 +157,7 @@
                   <a class="history_cont_button" href="https://www.darnitsa.ru/blog/istoriya/vsemirnaya-istoriya-khleba/" target="_blank">Узнать</a>
                    </div>
                 </div>
-                  <img class="history_cont_img" src="./public/img/история.jpg" alt="image">
+                  <img class="history_cont_img" src="./public/img/история-1920.jpg" alt="image">
                 </div>
                 
                        
@@ -423,28 +423,31 @@
             <p class="sale_cont_data_p">20%</p>
           </div>
         </div>
-        <img  class="sale_cont_close" src="icon/close.svg" alt="close">
+        <img  class="sale_cont_close" src="./public/icon/close.svg" alt="close">
         
       </div>
     </div>
 
     <div class="call">
-      <img  class="call_icon" src="icon/call.png" alt="">
+      <img  class="call_icon" src="./public/icon/call.png" alt="">
     </div>
 
     <div class="basket">
       <div class="basket_icon">
-      <img class="basket_icon_i" src="icon/корзина.png" alt="icon">
+      <img class="basket_icon_i" src="./public/icon/корзина.png" alt="icon">
       <p class="basket_icon_count">1</p>
       
     </div>
     </div>
     <div class="basket_popup" >
+      <div class="basket_shadow" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.9; background-color: black;"></div>
+
       <div class="basket_cont">
-        <img src="./public/img/история.jpg" alt="image" class="basket_cont_img">
+        <img  class="basket_cont_close" src="icon/close.svg" alt="close">
+        <img src="./public/img/история-1920.jpg" alt="image" class="basket_cont_img">
       <h2 class="basket_cont_title">Корзина</h2>
       <ul class="basket_cont_list">
-        <li class="basket_cont_list_item">
+        <!-- <li class="basket_cont_list_item">
           <div style="display: flex; flex-direction: row; align-items: center; gap: 1rem;">
           <img class="basket_cont_list_item_img" src="./public/icon/пончик.png" alt="image" width="100">
           <div>
@@ -454,14 +457,14 @@
           </div>
           <div style="display: flex; flex-direction: row; align-items: center; gap: 1rem;">
           <span class="basket_cont_list_item_price">50 руб</span>
-          <img class="basket_cont_list_item_delete" src="./public/icon/корзина.png">
+          <img class="basket_cont_list_item_delete" src="./public/icon/мусор.png">
         </div>
-        </li>
+        </li> -->
 
       </ul>
       <div class="basket_cont_all_price">
-        <span class="basket_cont_all_price_number">150 рублей</span>
-        <a href="#">Кнопка</a>
+        <span class="basket_cont_all_price_number">0 рублей</span>
+        <a  class="basket_cont_all_price_button" href="#">Заказать</a>
       </div>
     </div>
     </div>

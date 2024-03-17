@@ -163,7 +163,11 @@ a:hover, ul:hover {
   background-color: black;
 }
 
+.basket {
+  display: none;
+}
 .basket .basket_icon {
+  z-index: 101;
   position: fixed;
   padding: 10px;
   background-color: orange;
@@ -192,6 +196,119 @@ a:hover, ul:hover {
   background-color: red;
   font-size: 8px;
   border-radius: 50px;
+}
+
+.basket_popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  font-family: "Noto Sans Display", sans-serif;
+}
+.basket_popup .basket_cont {
+  width: 400px;
+  min-height: 400px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #24262A;
+  position: relative;
+}
+@media screen and (max-width: 400px) {
+  .basket_popup .basket_cont {
+    width: 300px;
+  }
+}
+.basket_popup .basket_cont .basket_cont_all_price {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 1rem;
+}
+@media screen and (max-width: 400px) {
+  .basket_popup .basket_cont .basket_cont_all_price {
+    width: 300px;
+  }
+}
+.basket_popup .basket_cont .basket_cont_close {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: orange;
+  width: 15px;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+  border: 0.5px solid orange;
+}
+.basket_popup .basket_cont .basket_cont_close:hover {
+  background-color: #111315;
+  border: 0.5px solid orange;
+  border-color: orange;
+}
+.basket_popup .basket_cont .basket_cont_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  overflow-y: scroll;
+  max-width: 350px;
+  max-height: 350px;
+  width: 100%;
+}
+@media screen and (max-width: 400px) {
+  .basket_popup .basket_cont .basket_cont_list {
+    max-width: 250px;
+  }
+}
+.basket_popup .basket_cont .basket_cont_list .basket_cont_list_item {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.basket_popup .basket_cont .basket_cont_list .basket_cont_list_item .basket_cont_list_item_img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  object-position: center;
+}
+.basket_popup .basket_cont .basket_cont_list .basket_cont_list_item .basket_cont_list_item_delete {
+  width: 15px;
+  cursor: pointer;
+}
+.basket_popup .basket_cont .basket_cont_list .basket_cont_list_item .basket_cont_list_item_title {
+  font-size: 16px;
+  color: orange;
+  font-family: "Caveat", cursive;
+}
+.basket_popup .basket_cont .basket_cont_list .basket_cont_list_item .basket_cont_list_item_subtitle {
+  font-size: 12px;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+.basket_popup .basket_cont .basket_cont_list .basket_cont_list_item .basket_cont_list_item_price {
+  font-size: 12px;
+}
+.basket_popup .basket_cont .basket_cont_img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.active {
+  display: flex;
 }
 
 .header {
@@ -228,9 +345,17 @@ a:hover, ul:hover {
 }
 .header .nav .nav_menu .header_bread_1 {
   display: none;
+  position: absolute;
+  top: 10rem;
+  right: 3rem;
+  max-width: 60px;
 }
 .header .nav .nav_menu .header_bread_2 {
-  display: none;
+  display: block;
+  position: absolute;
+  bottom: 5rem;
+  left: 11rem;
+  max-width: 40px;
 }
 .header .nav .nav_menu .nav_menu_list {
   display: flex;
@@ -640,6 +765,7 @@ a:hover, ul:hover {
     display: flex;
     flex-direction: column;
     row-gap: 2.5rem;
+    font-size: 22px;
   }
   .header .nav .nav_menu .nav_menu_list .nav_menu_list_item {
     font-weight: 200;
