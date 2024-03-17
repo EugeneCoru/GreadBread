@@ -48,10 +48,10 @@ const saleClose = document.querySelector('.sale_cont_close');
 saleClose.addEventListener('click', ()=>{
         sale.style.display = 'none';
 });
-setTimeout(()=>{
-    sale.style.display = 'flex';
+// setTimeout(()=>{
+//     sale.style.display = 'flex';
     
-}, 15000);
+// }, 15000);
 
 //телефонный звонок
 const call = document.querySelector('.call');
@@ -94,29 +94,29 @@ document.querySelectorAll('a[href^="#"').forEach(link => {
 
 
 //
-const scrollWW = ScrollReveal({
-    origin: 'top',
-    distance: '40px',
-    opacity: 1,
-    scale: 1.1,
-    duration: 2500,
-    delay: 300,
-    //reset: true, // 
-});
+// const scrollWW = ScrollReveal({
+//     origin: 'top',
+//     distance: '40px',
+//     opacity: 1,
+//     scale: 1.1,
+//     duration: 2500,
+//     delay: 300,
+//     //reset: true, // 
+// });
 
-scrollWW.reveal(`.home_cont_data, .history_cont_data, .visit_content`);
-scrollWW.reveal('.home_cont_data_img, .history_img, .footer_cont_img1', {rotate: {z: -15}})
-scrollWW.reveal('.home_img, .footer_cont_img2', {rotate: {z: 15}})
-scrollWW.reveal('.home_footer', {scale: 1, origin: 'bottom'})
+// scrollWW.reveal(`.home_cont_data, .history_cont_data, .visit_content`);
+// scrollWW.reveal('.home_cont_data_img, .history_img, .footer_cont_img1', {rotate: {z: -15}})
+// scrollWW.reveal('.home_img, .footer_cont_img2', {rotate: {z: 15}})
+// scrollWW.reveal('.home_footer', {scale: 1, origin: 'bottom'})
 
 
-scrollWW.reveal('.news_card:nth-child(1) img', {rotate: {z: -30, distance: 0}})
-scrollWW.reveal('.news_card:nth-child(2) img', {rotate: {z: 20, distance: 0, delay: 600}})
-scrollWW.reveal('.news_card:nth-child(3) img', {rotate: {z: -30, distance: 0, delay: 900}})
+// scrollWW.reveal('.news_card:nth-child(1) img', {rotate: {z: -30, distance: 0}})
+// scrollWW.reveal('.news_card:nth-child(2) img', {rotate: {z: 20, distance: 0, delay: 600}})
+// scrollWW.reveal('.news_card:nth-child(3) img', {rotate: {z: -30, distance: 0, delay: 900}})
 
-scrollWW.reveal('.menu_card', {interval: 100, scale: 1.05, origin: 'top', distance: 0, delay: 100})
+// scrollWW.reveal('.menu_card', {interval: 100, scale: 1.05, origin: 'top', distance: 0, delay: 100})
 
-scrollWW.reveal('.footer_cont', {scale: 1 })
+// scrollWW.reveal('.footer_cont', {scale: 1 })
 
 
 
